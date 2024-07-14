@@ -1,0 +1,77 @@
+---
+title: "Compute Global Max Similarity Matrix for 2 Sequences"
+author: "Conor Heffron"
+date: "2024-07-14"
+output: pdf_document
+---
+
+# Objective: Compute the global max similarity matrix between the two sequences:
+- AAGTGCCTCAAGATA
+- ACCGTCTCAGCAATA
+
+## Load scripts & libraries
+```{r}
+library(stringr)
+source('global-max-sim-matrix.R')
+```
+
+## Define Sequence 1
+```{r}
+seq1 <- 'AAGTGCCTCAAGATA'
+seq1
+```
+## Define Sequence 2
+```{r}
+seq2 <- 'ACCGTCTCAGCAATA'
+seq2
+```
+
+## Get Sequence 1 & 2 Lengths
+```{r}
+m <- nchar(seq1)
+n <- nchar(seq2)
+print(paste('Sequence Length (seq1, seq2):', m, n))
+```
+
+## Create Initial Matrix Object & fill with Zeros
+```{r}
+# Construct default similarity matrix and fill with 0's
+sim_matrix <- matrix(0, m+1, n+1)
+sim_matrix
+```
+## Compute First Column Values
+```{r}
+sim_matrix <- init_matrix_col1(sim_matrix, m)
+sim_matrix
+```
+
+## Compute First Row Values
+```{r}
+sim_matrix <- init_matrix_row1(sim_matrix, n)
+sim_matrix
+```
+
+```{r}
+# define score look-up map
+d <- c("match" = 1, "mismatch" = -1, "gap" = -2)
+d
+```
+
+## Compute Global Max Similarity Matrix for seq1 & seq2
+```{r}
+sim_matrix <- populate_global_max_sim_matrix(sim_matrix, seq1, seq2, d, m, n)
+sim_matrix
+```
+## Label columns and rows
+```{r}
+# colnames(sim_matrix) <- c('-', 'A', 'A', 'G', 'T', 'G', 'C', 'C', 'T', 'C', 'A', 'A', 'G', 'A', 'T', 'A')
+colnames(sim_matrix) <- unlist(stringr::str_split(paste('-', seq1, sep=''), boundary("character")))
+
+# rownames(sim_matrix) <- c('-', 'A', 'C', 'C', 'G', 'T', 'C', 'T', 'C', 'A', 'G', 'C', 'A', 'A', 'T', 'A')
+rownames(sim_matrix) <- unlist(stringr::str_split(paste('-', seq2, sep=''), boundary("character")))
+```
+
+## Final Matrix Output
+```{r}
+sim_matrix
+```
