@@ -12,7 +12,7 @@ output: github_document
 ## Load scripts & libraries
 ```{r}
 library(stringr)
-source('../R/global-max-sim-matrix.R')
+source('R/global-max-sim-matrix.R')
 ```
 
 ## Define Sequence 1
