@@ -5,7 +5,7 @@ Version: 1.1.0
 Author: Conor Heffron
 Maintainer: Conor Heffron <conor.heffron@gmail.com>
 Description: Compute the global max similarity matrix between the two genetic sequences.
-License: 
+License: `use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
