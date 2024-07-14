@@ -2,7 +2,7 @@
 title: "Compute Global Max Similarity Matrix for 2 Sequences"
 author: "Conor Heffron"
 date: "2024-07-14"
-output: pdf_document
+output: github_document
 ---
 
 # Objective: Compute the global max similarity matrix between the two sequences:
