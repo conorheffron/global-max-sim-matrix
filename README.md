@@ -14,8 +14,31 @@ Conor Heffron
 ## Load scripts & libraries
 
 ``` r
+library(devtools)
+```
+
+    ## Loading required package: usethis
+
+    ## Warning: package 'usethis' was built under R version 4.3.2
+
+``` r
 library(stringr)
-source('global-max-sim-matrix.R')
+
+devtools::install_github("conorheffron/global-max-sim-matrix")
+```
+
+    ## Skipping install of 'global.max.sim.matrix' from a github remote, the SHA1 (99501887) has not changed since last install.
+    ##   Use `force = TRUE` to force installation
+
+``` r
+load_all()
+```
+
+    ## ℹ Loading global.max.sim.matrix
+
+``` r
+# source('R/global-max-sim-matrix.R')
+# use_r("global-max-sim-matrix")
 ```
 
 ## Define Sequence 1
