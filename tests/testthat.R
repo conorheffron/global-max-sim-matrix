@@ -7,6 +7,5 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(shiny)
 
 test_check("global.max.sim.matrix")
