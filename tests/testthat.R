@@ -7,7 +7,5 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(global-max-sim-matrix)
-
 
 test_check("global.max.sim.matrix")
