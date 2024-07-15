@@ -33,6 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck", "testthat", "stringr"))
+          devtools::install_github("conorheffron/global-max-sim-matrix")
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
