@@ -95,3 +95,9 @@ rownames(sim_matrix) <- unlist(stringr::str_split(paste('-', seq2, sep=''), boun
 ```{r}
 sim_matrix
 ```
+
+## Run tests
+
+```{r}
+devtools
+```
