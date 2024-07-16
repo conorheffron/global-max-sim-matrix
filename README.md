@@ -3,6 +3,9 @@ Compute Global Max Similarity Matrix for 2 Sequences
 Conor Heffron
 2024-07-16
 
+# See overiew & notes at the link below:
+- [overview](./global-max-sim-matrix.pdf)
+
 # Objective: Compute the global max similarity matrix between the two sequences:
 
 - AAGTGCCTCAAGATA
