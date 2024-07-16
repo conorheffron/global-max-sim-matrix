@@ -99,5 +99,5 @@ sim_matrix
 ## Run tests
 
 ```{r}
-devtools
+devtools::test()
 ```
