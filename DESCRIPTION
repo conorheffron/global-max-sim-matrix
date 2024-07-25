@@ -1,7 +1,7 @@
 Package: global.max.sim.matrix
 Type: Package
 Title: Compute Global Max Similarity Matrix for 2 Sequences
-Version: 1.1.2
+Version: 1.1.3
 Author: Conor Heffron
 Maintainer: Conor Heffron <conor.heffron@gmail.com>
 Description: Compute the global max similarity matrix between the two genetic sequences.
