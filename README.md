@@ -1,3 +1,7 @@
+# global-max-sim-matrix
+
+[![R](https://github.com/conorheffron/global-max-sim-matrix/actions/workflows/r.yml/badge.svg)](https://github.com/conorheffron/global-max-sim-matrix/actions/workflows/r.yml)
+
 Compute Global Max Similarity Matrix for 2 Sequences
 ================
 Conor Heffron
