@@ -1,8 +1,11 @@
 # global-max-sim-matrix
 
-[global-max-sim-matrix.pdf](global-max-sim-matrix.pdf)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 [![R](https://github.com/conorheffron/global-max-sim-matrix/actions/workflows/r.yml/badge.svg)](https://github.com/conorheffron/global-max-sim-matrix/actions/workflows/r.yml)
+
+## PDF OVerview
+ - [global-max-sim-matrix.pdf](global-max-sim-matrix.pdf)
 
 Compute Global Max Similarity Matrix for 2 Sequences
 ================
